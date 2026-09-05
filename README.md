@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🍰✨ PiwI Cakes & Candy ✨🍰
+# 🍰✨ Piwi Cakes & Candy ✨🍰
 
 ### 🧁 E-Commerce de Repostería · Generation México · Cohorte 71
 
@@ -28,9 +28,9 @@
 
 ---
 
-## 🍓 ¿Qué es PiwI Cakes & Candy?
+## 🍓 ¿Qué es Piwi Cakes & Candy?
 
-**PiwI Cakes & Candy** es una plataforma E-Commerce enfocada en la venta de productos de repostería.
+**Piwi Cakes & Candy** es una plataforma E-Commerce enfocada en la venta de productos de repostería.
 
 El proyecto busca combinar una experiencia de compra sencilla, moderna y responsiva con una presentación visual atractiva de productos como:
 
@@ -130,7 +130,7 @@ Se aprovechan componentes de Bootstrap para construir una interfaz consistente y
 # 📂 Estructura del proyecto
 
 ```text
-PiwI-Cakes-Candy/
+Piwi-Cakes-Candy/
 │
 ├── 📁 frontend/
 │   │
@@ -216,7 +216,7 @@ git clone URL_DEL_REPOSITORIO
 ## 2. Entrar al proyecto
 
 ```bash
-cd PiwI-Cakes-Candy
+cd Piwi-Cakes-Candy
 ```
 
 ## 3. Ejecutar Frontend
@@ -384,7 +384,7 @@ git push origin feature/nombre-funcionalidad
 
 ### 💻 Full Stack Development
 
-**PiwI Cakes & Candy 🍰**
+**Piwi Cakes & Candy 🍰**
 
 ---
 
