@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🍰✨ Piwi Cakes & Candy ✨🍰
+# 🐾✨ Piwi Pet Care ✨🐾
 
-### 🧁 E-Commerce de Repostería · Generation México · Cohorte 71
+### 🐶 E-Commerce de Bienestar Animal · Generation México · Cohorte 71
 
 <p>
   <img src="https://img.shields.io/badge/Generation%20México-Cohorte%2071-ff69b4?style=for-the-badge" alt="Generation México">
@@ -14,13 +14,13 @@
 
 <br>
 
-> **Un pedacito de felicidad en cada creación. 🎂💖**
+> **Amor, salud y bienestar en cada etapa de su vida. 🐶🐱💖**
 
 <p>
   <em>
-    Plataforma E-Commerce para descubrir, explorar y adquirir deliciosos
-    productos de repostería, desarrollada como Proyecto Integrador de
-    Generation México.
+    Plataforma E-Commerce diseñada para descubrir, explorar y adquirir productos enfocados
+    en mejorar la calidad de vida, salud y confort de nuestras mascotas, desarrollada como
+    Proyecto Integrador de Generation México.
   </em>
 </p>
 
@@ -28,21 +28,21 @@
 
 ---
 
-## 🍓 ¿Qué es Piwi Cakes & Candy?
+## 🐶 ¿Qué es Piwi Pet Care?
 
-**Piwi Cakes & Candy** es una plataforma E-Commerce enfocada en la venta de productos de repostería.
+**Piwi Pet Care** es una plataforma E-Commerce enfocada en el cuidado integral y la mejora de la calidad de vida de perros, gatos y otras mascotas.
 
-El proyecto busca combinar una experiencia de compra sencilla, moderna y responsiva con una presentación visual atractiva de productos como:
+El proyecto busca combinar una experiencia de compra sencilla, moderna y responsiva con una selección especializada de artículos diseñados para promover el bienestar animal, tales como:
 
-🎂 Pasteles personalizados  
-🍓 Pasteles de frutas  
-🍫 Pasteles de chocolate  
-🧁 Cupcakes  
-🍪 Galletas  
-🍬 Dulces  
-✨ Creaciones especiales
+🛌 Camas ergonómicas y ortopédicas  
+🧠 Juguetes interactivos y de estimulación mental  
+🥣 Comederos lentos y dispensadores inteligentes  
+🧼 Productos de higiene, grooming y cuidado dermatológico  
+🦴 Suplementos funcionales y premios saludables  
+🦮 Arneses anatómicos y accesorios de paseo seguros  
+✨ Artículos para mascotas con necesidades especiales (movilidad, edad madura)
 
-Nuestro objetivo es construir una experiencia digital donde cada producto se vea tan delicioso como en la vida real.
+Nuestro objetivo es construir un espacio digital donde cada tutor encuentre soluciones efectivas para hacer más feliz y plena la vida de sus compañeros de cuatro patas.
 
 ---
 
@@ -52,24 +52,24 @@ Desarrollar una aplicación web **Full Stack** que permita a los usuarios:
 
 | Funcionalidad | Descripción |
 |---|---|
-| 🏠 **Inicio** | Conocer la marca y descubrir productos destacados |
-| 🧁 **Catálogo** | Explorar los productos disponibles |
-| 🔎 **Detalle** | Consultar información de cada producto |
-| 👤 **Registro** | Crear una cuenta de usuario |
+| 🏠 **Inicio** | Conocer la marca y descubrir productos destacados para el bienestar animal |
+| 🦴 **Catálogo** | Explorar la variedad de productos categorizados por necesidad |
+| 🔎 **Detalle** | Consultar especificaciones, materiales y beneficios de cada artículo |
+| 👤 **Registro** | Crear una cuenta de usuario/tutor |
 | 🔐 **Login** | Iniciar sesión en la plataforma |
-| 🛒 **Carrito** | Agregar, modificar y eliminar productos |
-| 📦 **Stock** | Consultar disponibilidad |
-| 💳 **Compra** | Simular el proceso de compra |
+| 🛒 **Carrito** | Agregar, modificar y eliminar artículos de compra |
+| 📦 **Stock** | Consultar disponibilidad del inventario en tiempo real |
+| 💳 **Compra** | Simular el proceso de compra de forma fluida y segura |
 
 ---
 
 # ✨ Características principales
 
-### 🎨 Diseño moderno
-Interfaz inspirada en el mundo de la repostería, utilizando colores, imágenes y elementos visuales que transmitan una experiencia dulce y amigable.
+### 🎨 Diseño cálido y moderno
+Interfaz inspirada en el amor por los animales, utilizando tonos amigables, tipografía clara y un diseño visual que transmite confianza, salud y dinamismo.
 
 ### 📱 Diseño responsivo
-La plataforma está pensada para funcionar correctamente en:
+La plataforma está optimizada para adaptarse a cualquier pantalla:
 
 📱 Smartphones  
 📲 Tablets  
@@ -77,10 +77,10 @@ La plataforma está pensada para funcionar correctamente en:
 🖥️ Desktop
 
 ### ⚡ Interactividad
-JavaScript se utiliza para agregar comportamiento dinámico a la interfaz y mejorar la experiencia del usuario.
+Uso de JavaScript para dar fluidez visual, gestionar dinámicamente el carrito de compras y validar formularios en tiempo real.
 
 ### 🧩 Componentes Bootstrap
-Se aprovechan componentes de Bootstrap para construir una interfaz consistente y responsiva.
+Aprovechamiento del framework Bootstrap 5 para garantizar componentes coherentes, modernos y con excelente accesibilidad.
 
 ---
 
@@ -90,8 +90,8 @@ Se aprovechan componentes de Bootstrap para construir una interfaz consistente y
 
 | Tecnología | Uso |
 |---|---|
-| 🌐 **HTML5** | Estructura de las páginas |
-| 🎨 **Bootstrap 5** | Diseño responsivo y componentes |
+| 🌐 **HTML5** | Estructura semántica de las páginas |
+| 🎨 **Bootstrap 5** | Diseño responsivo, grillas y componentes |
 | ⚡ **JavaScript** | Interactividad y lógica del Frontend |
 | ☕ **Java** | Backend y lógica de negocio |
 | 🌿 **Git** | Control de versiones |
@@ -104,7 +104,7 @@ Se aprovechan componentes de Bootstrap para construir una interfaz consistente y
 # 🏗️ Arquitectura
 
 ```text
-                         🍰 PIWI CAKES & CANDY
+                         🐾 PIWI PET CARE
                                   │
                     ┌─────────────┴─────────────┐
                     │                           │
@@ -118,7 +118,7 @@ Se aprovechan componentes de Bootstrap para construir una interfaz consistente y
                     │                           │
                     └─────────────┬─────────────┘
                                   │
-                       🧁 Productos / Usuarios
+                       🐾 Productos / Usuarios
                                   │
                     ┌─────────────┼─────────────┐
                     │             │             │
@@ -130,7 +130,7 @@ Se aprovechan componentes de Bootstrap para construir una interfaz consistente y
 # 📂 Estructura del proyecto
 
 ```text
-Piwi-Cakes-Candy/
+Piwi-Pet-Care/
 │
 ├── 📁 frontend/
 │   │
@@ -158,20 +158,20 @@ Piwi-Cakes-Candy/
 └── 📄 .gitignore
 ```
 
-> 📌 La estructura puede cambiar conforme avance el desarrollo.
+> 📌 La estructura puede adaptarse conforme avance el ciclo de desarrollo.
 
 ---
 
-# 🧁 Experiencia del usuario
+# 🐾 Experiencia del usuario
 
 ```text
         🏠 HOME
           │
           ▼
-     🧁 CATÁLOGO
+     🦴 CATÁLOGO
           │
           ▼
-    🔎 PRODUCTO
+    🐾 PRODUCTO
           │
           ▼
       🛒 CARRITO
@@ -183,23 +183,23 @@ Piwi-Cakes-Candy/
       💳 COMPRA
           │
           ▼
-    🎉 ¡PEDIDO LISTO!
+    🎉 ¡PEDIDO EN CAMINO!
 ```
 
 ---
 
 # 🎨 Identidad del proyecto
 
-La propuesta visual busca transmitir:
+La propuesta visual y filosófica busca transmitir:
 
 <div align="center">
 
-🍓 **Frescura**  
-🍫 **Antojo**  
-🧁 **Creatividad**  
-🎂 **Celebración**  
-✨ **Personalización**  
-💖 **Calidad**
+🐶 **Bienestar**  
+🐱 **Confort**  
+🦴 **Salud & Vitalidad**  
+🐾 **Diversión & Estimulación**  
+💚 **Cuidado Consciente**  
+✨ **Calidad Garantizada**
 
 </div>
 
@@ -216,7 +216,7 @@ git clone URL_DEL_REPOSITORIO
 ## 2. Entrar al proyecto
 
 ```bash
-cd Piwi-Cakes-Candy
+cd Piwi-Pet-Care
 ```
 
 ## 3. Ejecutar Frontend
@@ -225,7 +225,7 @@ Abrir `index.html` directamente en el navegador o utilizar **Live Server** desde
 
 ## 4. Ejecutar Backend
 
-Abrir el proyecto Java en el IDE correspondiente y ejecutar la aplicación.
+Abrir el proyecto Java en el IDE correspondiente (IntelliJ IDEA, Eclipse, VS Code) y ejecutar la aplicación.
 
 ---
 
@@ -235,25 +235,25 @@ Abrir el proyecto Java en el IDE correspondiente y ejecutar la aplicación.
 
 - [x] 🏠 Página de inicio
 - [x] 📱 Diseño responsivo
-- [ ] 🧁 Catálogo
+- [ ] 🦴 Catálogo
 - [ ] 🔎 Detalle de productos
-- [ ] 👤 Registro
+- [ ] 👤 Registro de usuarios / tutores
 - [ ] 🔐 Login
-- [ ] 🛒 Carrito
-- [ ] 📦 Stock
+- [ ] 🛒 Carrito de compras
+- [ ] 📦 Gestión visual de stock
 
 ### ☕ Backend
 
-- [ ] 🔌 Integración Frontend / Backend
+- [ ] 🔌 Integración Frontend / Backend (REST API)
 - [ ] 👤 Gestión de usuarios
-- [ ] 🧁 Gestión de productos
-- [ ] 📦 Gestión de stock
+- [ ] 🐾 Gestión de catálogo de productos
+- [ ] 📦 Gestión de inventario
 - [ ] 🛒 Gestión de pedidos
-- [ ] 💳 Flujo de compra
+- [ ] 💳 Flujo de simulación de pagos
 
 ### 🧪 Testing & Deploy
 
-- [ ] 🧪 Pruebas funcionales
+- [ ] 🧪 Pruebas unitarias e integrales
 - [ ] 🔍 Corrección de errores
 - [ ] 🚀 Deploy
 - [ ] 📊 Presentación final
@@ -281,7 +281,7 @@ Abrir el proyecto Java en el IDE correspondiente y ejecutar la aplicación.
 
 # 🤝 Metodología de trabajo
 
-El proyecto se desarrolla mediante trabajo colaborativo y prácticas de desarrollo ágil.
+El proyecto se desarrolla mediante trabajo colaborativo y prácticas de desarrollo ágil (Scrum/Kanban).
 
 ```text
 📋 PLAN
@@ -305,7 +305,7 @@ El proyecto se desarrolla mediante trabajo colaborativo y prácticas de desarrol
 
 # 🌿 Git Workflow
 
-Una estrategia sencilla para el equipo:
+Estrategia de ramificación gitflow recomendada para el equipo:
 
 ```text
 main
@@ -321,25 +321,25 @@ main
  └── release
 ```
 
-### Ejemplo
+### Ejemplo de flujo
 
 ```bash
 git checkout develop
 
-git checkout -b feature/nombre-funcionalidad
+git checkout -b feature/catalogo-mascotas
 
 git add .
 
-git commit -m "feat: agregar catálogo de productos"
+git commit -m "feat: agregar vistas de catálogo para productos de bienestar"
 
-git push origin feature/nombre-funcionalidad
+git push origin feature/catalogo-mascotas
 ```
 
 ---
 
-# 📸 Screenshots
+# 📸 Capturas de pantalla
 
-> 📌 Agrega aquí las capturas de pantalla del proyecto cuando las páginas estén terminadas.
+> 📌 Agrega aquí las capturas del proyecto a medida que finalicen las vistas.
 
 ### 🏠 Home
 
@@ -347,13 +347,13 @@ git push origin feature/nombre-funcionalidad
 📸 /screenshots/home.png
 ```
 
-### 🧁 Catálogo
+### 🦴 Catálogo de Bienestar
 
 ```text
 📸 /screenshots/catalogo.png
 ```
 
-### 🛒 Carrito
+### 🛒 Carrito de Compras
 
 ```text
 📸 /screenshots/carrito.png
@@ -363,14 +363,12 @@ git push origin feature/nombre-funcionalidad
 
 # 💡 Próximas mejoras
 
-✨ Sistema de favoritos  
-🔎 Búsqueda de productos  
-🏷️ Filtros por categoría  
-⭐ Sistema de reseñas  
-🎂 Personalización de pasteles  
-📧 Confirmación de pedidos  
-📊 Panel administrativo  
-📈 Dashboard de ventas  
+🐾 Perfil personalizado para mascotas (raza, edad, tamaño, condición de salud)  
+🔎 Búsqueda y filtros por necesidad específica (movilidad, ansiedad, salud digestiva)  
+⭐ Sistema de reseñas con fotos de las mascotas usando los productos  
+🔄 Suscripción periódica de alimentos funcionales y suplementos  
+📧 Notificaciones y seguimiento de envíos  
+📊 Panel administrativo para inventarios y ventas  
 
 ---
 
@@ -384,11 +382,11 @@ git push origin feature/nombre-funcionalidad
 
 ### 💻 Full Stack Development
 
-**Piwi Cakes & Candy 🍰**
+**Piwi Pet Care 🐾**
 
 ---
 
-> _"El código también puede ser delicioso."_ 🧁💻
+> _"El código también puede mejorar la vida de quienes nos regalan su amor incondicional."_ 🐶🐱💻
 
 <br>
 
