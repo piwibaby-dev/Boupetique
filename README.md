@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐾✨ Piwi Pets ✨🐾
+# 🐾✨ Boupetique ✨🐾
 
 ### 🐶 E-Commerce de Cuidado y Bienestar Animal · Generation México · Cohorte 71
 
@@ -29,9 +29,9 @@
 
 ---
 
-## 🐶 ¿Qué es Piwi Pets?
+## 🐶 ¿Qué es Boupetique?
 
-**Piwi Pets** es un canal de e-commerce unificado y confiable diseñado para responder a la creciente "humanización" de las mascotas. Surge ante la problemática de un mercado fragmentado donde encontrar productos certificados, naturales y adecuados según las necesidades específicas de cada compañero (edad, tamaño, raza, condición de salud) resulta complejo.
+**Boupetique** es un canal de e-commerce unificado y confiable diseñado para responder a la creciente "humanización" de las mascotas. Surge ante la problemática de un mercado fragmentado donde encontrar productos certificados, naturales y adecuados según las necesidades específicas de cada compañero (edad, tamaño, raza, condición de salud) resulta complejo.
 
 Ofrecemos una selección curada de:
 * 🦴 **Alimento Premium y Nutrición Especializada**
@@ -76,7 +76,7 @@ Modelo **B2C (Business-to-Consumer)** basado en:
 
 ### 📊 Análisis Competitivo
 
-| Criterio / Variable | Piwi Pets (E-commerce) | Supermercados Online | Tiendas / Veterinarias | Marketplaces Generalistas |
+| Criterio / Variable | Boupetique (E-commerce) | Supermercados Online | Tiendas / Veterinarias | Marketplaces Generalistas |
 |---|---|---|---|---|
 | **Transparencia Nutricional (HD)** | **Especializado:** Detalle en ingredientes, alérgenos y edad. | **Baja:** Información básica o imágenes genéricas. | **Variable:** Depende del personal de atención. | **Inconsistente:** Depende de cada vendedor. |
 | **Suscripción "Pet Box"** | **Sí:** Mensual/bimestral con descuento y perfil de mascota. | **No:** Compras únicamente manuales. | **No:** Requiere acudir físicamente. | **Limitada:** Disponible en pocos productos. |
@@ -109,7 +109,7 @@ Modelo **B2C (Business-to-Consumer)** basado en:
 # 🏗️ Arquitectura del Sistema
 
 ```text
-                           🐾 PIWI PETS
+                           🐾 Boupetique
                                   │
                     ┌─────────────┴─────────────┐
                     │                           │
@@ -131,7 +131,7 @@ Modelo **B2C (Business-to-Consumer)** basado en:
 # 📂 Estructura del Repositorio
 
 ```text
-Piwi-Pets/
+Boupetique /
 │
 ├── 📁 frontend/
 │   ├── 📁 css/
@@ -150,7 +150,7 @@ Piwi-Pets/
 ├── 📁 backend/
 │   └── 📁 src/
 │       └── 📁 main/
-│           ├── 📁 java/com/piwipets/
+│           ├── 📁 java/com/boupetique/
 │           └── 📁 resources/
 │
 ├── 📄 README.md
@@ -262,7 +262,7 @@ Las sesiones *Daily* se ejecutan los días **Lunes y Jueves**.
 
 **Equipo Piwibabys — Full Stack Java Web Developer**
 
-**Piwi Pets 🐾**
+**Boupetique 🐾**
 
 ---
 
