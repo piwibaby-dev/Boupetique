@@ -239,4 +239,34 @@ margin: 0;
   .equipo-header h2 {
     font-size: 2.6rem;
   }
+/* Estilo para el contenedor del monograma: logo con css. CAMBIARA DESPUES */
+.logo-badge {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #34483D 0%,#5E7C64 100%); 
+    /*transition: añade transición para suavizar el movimiento*/
+    transition: transform 0.5s ease-in-out; 
+}
+
+/* Efecto hover interactivo al pasar el mouse por encima */
+.navbar-brand:hover .logo-badge {
+    transform: scale(1.1);
+}
+/* Cambiamos el color del nav-bar por la paleta de colores*/
+#nav {
+    background-color: #A8B5A0 !important; 
+}
+
+/*Cambiamos color de boton buscar por paleta de colores*/
+.btn-mi-color {
+    color: #F6F0E3; /* cambia color de letra Buscar*/
+    background-color: #34483D; /* Cambiá este color de fondo */
+    border-color: #5E7C64;     /* Cambiá este color de borde */
+}
+
+/*Cambiamos color de boton buscar por paleta de colores al pasar cursor.*/
+.btn-mi-color:hover {
+    background-color: #2F3A3D; /* Color al pasar el cursor por encima */
+    border-color: #E7D8C9;
+    color: #ffffff;
 }
