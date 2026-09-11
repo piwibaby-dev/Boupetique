@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+/*PALETA DE COLORES BOUPETIQUE*/
+    --boupetique-olive: #5E7C64;
+    --boupetique-gris: #34483D;
+    --boupetique-gris-ceniza: #A8B5A0;
+    --boupetique-chocolat: #D96B27;
+    --boupetique-crema-almendras: #E7D8C9;
+    --boupetique-cremita: #F6F0E3;
+    --boupetique-negro-azabache: #2F3A3D;
+    --boupetique-gris-alabastro: #D9E1DE;
+
+/*TIPOGRAFIAS*/
+
+    --font-family: "Crimson Pro", serif;
+    --font-optical-sizing: auto;
+    --font-weight: <weight>;
+    --font-style: normal;
+
+
+
+}
+
