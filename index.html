@@ -19,22 +19,20 @@
     <!--! inicio del header nav-bar [By Jaime]-->
     <header id="header">
         <!--? Navegación, elemento bootstrap navbar-->
-        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <!--? Se creo un monograma con CSS mientras se crea el logo. -->
                 <a id="logo-home" class="navbar-brand d-none d-lg-flex align-items-center gap-2" href="index.html">
-                    <!--? Contenedor del Monograma: logo creado con css, a este div aplicamos estilo css-->
-                    <div class="logo-badge bg-danger text-white fw-bold d-flex justify-content-center align-items-center rounded-2 shadow-sm"
+                    <div class="logo-badge text-white fw-bold d-flex justify-content-center align-items-center rounded-2 shadow-sm"
                         style="width: 40px; height: 40px;">
                         Bp
                     </div>
-                    <!--? Texto del Logo -->
                     <span class="fw-semibold fs-5 text-white">Boupetique</span>
                 </a>
                 <!--? LOGOTIPO SECUNDARIO: Solo aparece en pantallas pequeñas -->
                 <div class="d-flex align-items-center gap-2 d-lg-none">
                     <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
-                        <div class="logo-badge bg-danger text-white fw-bold d-flex justify-content-center align-items-center rounded-2 shadow-sm"
+                        <div class="logo-badge text-white fw-bold d-flex justify-content-center align-items-center rounded-2 shadow-sm"
                             style="width: 35px; height: 35px;">
                             BP
                         </div>
@@ -64,18 +62,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Registro</a>
                         </li>
+                        <!--! rel="noopener noreferrer" por seguridad en enlaces externos...protege tu sitio contra ataques de plantilla de pestañas maliciosas (tabnabbing) -->
                         <li class="nav-item">
-                            <!--! rel="noopener noreferrer" por seguridad en enlaces externos...protege tu sitio contra ataques de plantilla de pestañas maliciosas (tabnabbing) -->
                             <a class="nav-link" href="#" role="button" target="_blank"
                                 rel="noopener noreferrer">
                                 Próximamente
                             </a>
                         </li>
                     </ul>
-                    <!--? Formulario de búsqueda alineado a la derecha -->
+                    <!--? Formulario de búsqueda -->
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..."
-                            aria-label="Search" />
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" />
                         <button class="btn btn-mi-color" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -155,6 +152,10 @@
     Somos un equipo multifuncional de desarrolladores apasionados por la tecnología, la nutrición transparente y el bienestar de las mascotas.
   </p>
 </div>
+
+
+
+
 
     <!-- Script de Javascript -->
     <script src="app.js"></script>
