@@ -278,8 +278,27 @@ margin: 0;
     border-color: #E7D8C9;
     color: #ffffff;
 }
-/*
-****************************
-*? CSS para Nav-bar [Fin]
-*****************************
-*/
+
+/*CARDS.*/
+
+
+.card {
+  width: 18rem;              /* ancho fijo */
+  height: 28rem;             /* alto fijo */
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 220px;             /* altura fija para todas las imágenes */
+  width: 100%;               /* ocupa todo el ancho */
+  object-fit: cover;         /* recorta la imagen sin deformarla */
+  border-radius: 8px;        /* opcional */
+}
+
+.card-body {
+  flex: 1;                   /* ocupa todo el espacio disponible */
+}
+/*CARDS.*/
