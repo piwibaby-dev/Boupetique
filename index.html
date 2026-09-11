@@ -16,7 +16,7 @@
     <!--! inicio del header nav-bar-->
     <header id="header">
         <!--? Navegación, elemento bootstrap navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav id="nav" class="navbar navbar-expand-lgnav bar-dark bg-dark">
             <div class="container-fluid">
             <!--? Se creo un monograma con CSS mientras se crea el logo. -->
                 <a id="logo-home" class="navbar-brand d-none d-lg-flex align-items-center gap-2" href="index.html">
@@ -28,6 +28,21 @@
                     <!--? Texto del Logo -->
                     <span class="fw-semibold fs-5 text-white">Boupetique</span>
                 </a>
+                <!--? LOGOTIPO SECUNDARIO: Solo aparece en pantallas pequeñas -->
+                <div class="d-flex align-items-center gap-2 d-lg-none">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
+                        <div class="logo-badge bg-danger text-white fw-bold d-flex justify-content-center align-items-center rounded-2 shadow-sm"
+                            style="width: 35px; height: 35px;">
+                            BP
+                        </div>
+                    </a>
+                    <!--? 2. El botón hamburguesa que despliega menú que aparece solo en pantallas pequeñas -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
         </nav>
     </header>
     <!--!fin header-->

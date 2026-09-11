@@ -26,7 +26,16 @@
 .logo-badge {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -1px;
-    background: linear-gradient(135deg, #e50914 0%,#b20710 100%); 
+    background: linear-gradient(135deg, #34483D 0%,#5E7C64 100%); 
     /*transition: añade transición para suavizar el movimiento*/
     transition: transform 0.5s ease-in-out; 
+}
+
+/* Efecto hover interactivo al pasar el mouse por encima */
+.navbar-brand:hover .logo-badge {
+    transform: scale(1.1);
+}
+
+#nav {
+    background-color: #A8B5A0 !important; 
 }
