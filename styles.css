@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+/*PALETA DE COLORES BOUPETIQUE*/
+    --boupetique-olive: #5E7C64;
+    --boupetique-gris: #34483D;
+    --boupetique-gris-ceniza: #A8B5A0;
+    --boupetique-chocolat: #D96B27;
+    --boupetique-crema-almendras: #E7D8C9;
+    --boupetique-cremita: #F6F0E3;
+    --boupetique-negro-azabache: #2F3A3D;
+    --boupetique-gris-alabastro: #D9E1DE;
+
+/*TIPOGRAFIAS*/
+
+    --font-family: "Crimson Pro", serif;
+    --font-optical-sizing: auto;
+    --font-weight: <weight>;
+    --font-style: normal;
+
+
+
+}
+
+/* Estilo para el contenedor del monograma: logo con css. CAMBIARA DESPUES */
+.logo-badge {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #34483D 0%,#5E7C64 100%); 
+    /*transition: añade transición para suavizar el movimiento*/
+    transition: transform 0.5s ease-in-out; 
+}
+
+/* Efecto hover interactivo al pasar el mouse por encima */
+.navbar-brand:hover .logo-badge {
+    transform: scale(1.1);
+}
+/* Cambiamos el color del nav-bar por la paleta de colores*/
+#nav {
+    background-color: #A8B5A0 !important; 
+}
+
+/*Cambiamos color de boton buscar por paleta de colores*/
+.btn-mi-color {
+    color: #F6F0E3; /* cambia color de letra Buscar*/
+    background-color: #34483D; /* Cambiá este color de fondo */
+    border-color: #5E7C64;     /* Cambiá este color de borde */
+}
+
+/*Cambiamos color de boton buscar por paleta de colores al pasar cursor.*/
+.btn-mi-color:hover {
+    background-color: #2F3A3D; /* Color al pasar el cursor por encima */
+    border-color: #E7D8C9;
+    color: #ffffff;
+}
+
+/*CARDS.*/
+
+
+.card {
+  width: 18rem;              /* ancho fijo */
+  height: 28rem;             /* alto fijo */
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 220px;             /* altura fija para todas las imágenes */
+  width: 100%;               /* ocupa todo el ancho */
+  object-fit: cover;         /* recorta la imagen sin deformarla */
+  border-radius: 8px;        /* opcional */
+}
+
+.card-body {
+  flex: 1;                   /* ocupa todo el espacio disponible */
+}
+/*CARDS.*/
