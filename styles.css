@@ -22,3 +22,11 @@
 
 }
 
+/* Estilo para el contenedor del monograma: logo con css. CAMBIARA DESPUES */
+.logo-badge {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #e50914 0%,#b20710 100%); 
+    /*transition: añade transición para suavizar el movimiento*/
+    transition: transform 0.5s ease-in-out; 
+}
