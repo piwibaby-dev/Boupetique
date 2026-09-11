@@ -1,24 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boupetique</title>
     <!-- Conexión de BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- Conexión a CSS -->
     <link rel="stylesheet" href="styles.css">
-    
+
 
 </head>
+
 <body>
-    <header>
-        <!-- aqui va el menu-bar-->
+    <!--! inicio del header nav-bar [By Jaime]-->
+    <header id="header">
+        <!--? Navegación, elemento bootstrap navbar-->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!--? Se creo un monograma con CSS mientras se crea el logo. -->
+                <a id="logo-home" class="navbar-brand d-none d-lg-flex align-items-center gap-2" href="index.html">
+                    <!--? Contenedor del Monograma: logo creado con css, a este div aplicamos estilo css-->
+                    <div class="logo-badge bg-danger text-white fw-bold d-flex justify-content-center align-items-center rounded-2 shadow-sm"
+                        style="width: 40px; height: 40px;">
+                        Bp
+                    </div>
+                    <!--? Texto del Logo -->
+                    <span class="fw-semibold fs-5 text-white">Boupetique</span>
+                </a>
+                <!--? LOGOTIPO SECUNDARIO: Solo aparece en pantallas pequeñas -->
+                <div class="d-flex align-items-center gap-2 d-lg-none">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
+                        <div class="logo-badge bg-danger text-white fw-bold d-flex justify-content-center align-items-center rounded-2 shadow-sm"
+                            style="width: 35px; height: 35px;">
+                            BP
+                        </div>
+                    </a>
+                    <!--? 2. El botón hamburguesa que despliega menú que aparece solo en pantallas pequeñas -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!--? 3. Contenedor colapsable que agrupa los enlaces y el buscador en una sola línea, antes se amontonaban -->
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--! rel="noopener noreferrer" por seguridad en enlaces externos...protege tu sitio contra ataques de plantilla de pestañas maliciosas (tabnabbing) -->
+                            <a class="nav-link" href="#" role="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Próximamente
+                            </a>
+                        </li>
+                    </ul>
+                    <!--? Formulario de búsqueda alineado a la derecha -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..."
+                            aria-label="Search" />
+                        <button class="btn btn-mi-color" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-
-
-
+    <!--! Fin header-->
 
 
 
@@ -29,7 +93,10 @@
     <!-- Script de Javascript -->
     <script src="app.js"></script>
     <!-- Script de BootStrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
