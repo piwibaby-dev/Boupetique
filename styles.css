@@ -52,9 +52,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #A8B5A0 !important; 
 }
 
+/* Estilo del footer */
+footer {
+  background-color: var(--boupetique-gris-ceniza);
+}
+
 /* Estilo del botón buscar */
 .btn-mi-color {
-  color: #F6F0E3;
+  color: #F6F0E3 !important;
   background-color: #34483D;
   border-color: #5E7C64;
 }
@@ -288,4 +293,8 @@ h1, h2, h3, h4, h5, h6 {
 .card-body {
   display: flex;
   flex-direction: column;
+}
+
+.footer-l-p{
+  font-size: 14px;
 }
