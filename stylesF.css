@@ -1,0 +1,70 @@
+/* =========================================================
+   ESTILOS GENERALES
+   ========================================================= */
+
+body {
+    background-color: #f5f5f5;
+}
+
+
+/* =========================================================
+   ICONOS DE VALIDACIÓN
+   ========================================================= */
+
+/*
+    Al principio las palomitas están ocultas.
+*/
+.check-icon {
+    display: none;
+    color: #198754;
+    font-weight: bold;
+    background-color: #d1e7dd;
+}
+
+
+/*
+    Cuando el campo es correcto,
+    JavaScript agrega la clase "campo-valido".
+*/
+.campo-valido + .check-icon {
+    display: flex;
+}
+
+
+/* =========================================================
+   MENSAJE DE VALIDACIÓN DEL TEXTAREA
+   ========================================================= */
+
+.check-text {
+    display: none;
+    color: #198754;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+
+/*
+    Cuando el mensaje es válido,
+    mostramos la palomita.
+*/
+.check-text.mostrar {
+    display: block;
+}
+
+
+/* =========================================================
+   EFECTO VERDE
+   ========================================================= */
+
+.form-control.is-valid {
+    border-color: #198754;
+}
+
+
+/* =========================================================
+   BOTÓN DESHABILITADO
+   ========================================================= */
+
+button:disabled {
+    cursor: not-allowed;
+}
