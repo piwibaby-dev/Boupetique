@@ -52,9 +52,76 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #A8B5A0 !important; 
 }
 
+/* Estilo del footer */
+footer {
+  background-color: var(--boupetique-gris-ceniza);
+}
+
+.contact-info-card {
+  margin-bottom: 1.25rem;
+}
+
+.map-contact {
+  margin-top: 2rem;
+}
+
+.contact-details-list li {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--boupetique-gris);
+}
+
+/* Social media icons under contact section */
+.contact-social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background: #fff;
+  padding: 1.5rem 1.5rem 1.25rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(52, 72, 61, 0.08);
+  border: 1px solid rgba(52, 72, 61, 0.08);
+}
+
+.social-title {
+  color: var(--boupetique-gris);
+  font-size: 1.15rem;
+  margin-bottom: 0.9rem;
+}
+
+.social-links {
+  width: 100%;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 0.75rem;
+  background: transparent;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 1;
+}
+
+.social-link:hover {
+  transform: translateY(-1px);
+  opacity: 0.85;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(52, 72, 61, 0.12));
+}
+
 /* Estilo del botón buscar */
 .btn-mi-color {
-  color: #F6F0E3;
+  color: #F6F0E3 !important;
   background-color: #34483D;
   border-color: #5E7C64;
 }
@@ -288,4 +355,13 @@ h1, h2, h3, h4, h5, h6 {
 .card-body {
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.contactanos {
+  margin-bottom: 2rem;
+}
+
+.footer-l-p{
+  font-size: 14px;
 }
