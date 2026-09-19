@@ -60,6 +60,11 @@ body {
     border-color: #198754;
 }
 
+.form-control::placeholder {
+    color: black;
+}
+
+
 
 /* =========================================================
    BOTÓN DESHABILITADO

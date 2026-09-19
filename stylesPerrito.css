@@ -1,0 +1,437 @@
+/* ==========================================================
+   FUENTES
+========================================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+
+/* Crimson Pro para títulos */
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: 'Crimson Pro', serif;
+}
+
+
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #315c43 !important;
+}
+
+.nav-link {
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: #315c43;
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero {
+    background: #f7f4ed;
+    overflow: hidden;
+}
+
+.small-title {
+    color: #315c43;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 1.05;
+    margin-top: 15px;
+}
+
+.hero h1 span {
+    color: #315c43;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 550px;
+    color: #666;
+}
+
+
+/* ==========================================================
+   BOTONES
+========================================================== */
+
+.btn-bouti {
+    background: #315c43;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-weight: 500;
+}
+
+.btn-bouti:hover {
+    background: #234532;
+    color: white;
+}
+
+.btn-outline-bouti {
+    border: 1px solid #315c43;
+    color: #315c43;
+    border-radius: 30px;
+    padding: 12px 25px;
+}
+
+.btn-outline-bouti:hover {
+    background: #315c43;
+    color: white;
+}
+
+
+/* ==========================================================
+   PERRITO
+========================================================== */
+
+.dog-container {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+
+/* Círculo detrás del perro */
+
+.dog-background {
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    background: #dce9df;
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* SVG */
+
+.dog-svg {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+
+/* Orejas */
+
+.ear {
+    fill: #8b684e;
+}
+
+
+/* Cabeza */
+
+.dog-head {
+    fill: #d7b895;
+}
+
+
+/* Mancha */
+
+.spot {
+    fill: #8b684e;
+}
+
+
+/* Ojos */
+
+.eye {
+    fill: white;
+}
+
+
+/* Pupilas */
+
+.pupil {
+    fill: #222;
+
+    /* Hace que el movimiento sea suave */
+    transition: transform 0.08s linear;
+}
+
+
+/* Hocico */
+
+.muzzle {
+    fill: #f0d7bb;
+}
+
+
+/* Nariz */
+
+.nose {
+    fill: #292929;
+}
+
+
+/* Boca */
+
+.mouth {
+    fill: none;
+
+    stroke: #292929;
+
+    stroke-width: 5;
+
+    stroke-linecap: round;
+}
+
+
+/* ==========================================================
+   TARJETAS FLOTANTES
+========================================================== */
+
+.floating-card {
+    position: absolute;
+
+    background: white;
+
+    padding: 12px 18px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    font-size: 14px;
+
+    z-index: 5;
+}
+
+.card-one {
+    top: 25%;
+    left: 0;
+}
+
+.card-two {
+    top: 55%;
+    right: 0;
+}
+
+.card-three {
+    bottom: 10%;
+    left: 5%;
+}
+
+
+/* ==========================================================
+   SECCIONES
+========================================================== */
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-padding h2,
+.products-section h2 {
+    font-size: 45px;
+}
+
+
+/* ==========================================================
+   SERVICIOS
+========================================================== */
+
+.service-card {
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    height: 100%;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card .icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 28px;
+}
+
+
+/* ==========================================================
+   PRODUCTOS
+========================================================== */
+
+.products-section {
+    background: #f7f4ed;
+    padding: 100px 0;
+}
+
+.product-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    height: 100%;
+
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-image {
+    background: #e8f0e9;
+
+    height: 200px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 80px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 26px;
+}
+
+.product-card strong {
+    color: #315c43;
+    font-size: 20px;
+}
+
+
+/* ==========================================================
+   CONTACTO
+========================================================== */
+
+.contact-section {
+    padding: 100px 20px;
+}
+
+.contact-section h2 {
+    font-size: 50px;
+}
+
+.contact-section p {
+    color: #666;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer {
+    background: #203c2d;
+    color: white;
+    padding: 40px 0;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 991px) {
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .dog-container {
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .dog-background {
+        width: 300px;
+        height: 300px;
+    }
+
+    .floating-card {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    .card-one {
+        left: 5px;
+    }
+
+    .card-two {
+        right: 5px;
+    }
+
+}
