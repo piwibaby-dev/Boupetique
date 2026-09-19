@@ -3,7 +3,8 @@
 
 :root {
   /* PALETA DE COLORES BOUPETIQUE */
-  --boupetique-olive: #5E7C64;
+  --boupetique-olive: #3F5946;
+  --boupetique-olive-clear: #5E7C64;
   --boupetique-gris: #34483D;
   --boupetique-gris-ceniza: #A8B5A0;
   --boupetique-chocolat: #D96B27;
@@ -11,6 +12,9 @@
   --boupetique-cremita: #F6F0E3;
   --boupetique-negro-azabache: #2F3A3D;
   --boupetique-gris-alabastro: #D9E1DE;
+   --boupetique-texto-sobre-fondo:#FFFFFF;
+   --boupetique-marron:#6F4E37;
+   --boupetique-marron-oscuro:#4A3626;
 
   /* TIPOGRAFIAS */
   --font-titulo: "Crimson Pro", Georgia, serif;
@@ -66,14 +70,30 @@ h6 {
 
 /* Forzamos el color de la barra de navegación */
 #nav.navbar {
-  background-color: #A8B5A0 !important;
+  background-color: var(--boupetique-olive) !important;
+}
+/*links del navbar*/
+.nav-link {
+    color: #FFFFFF !important;
 }
 
+.nav-link:hover {
+    color: #E8C98A !important;
+}
+
+.nav-link.active {
+    color: #F2C14E !important;
+    font-weight: bold;
+}
 /* Estilo del footer */
 footer {
-  background-color: var(--boupetique-gris-ceniza);
+  background-color:  var(--boupetique-olive);
   /* Aplica el dibujo a footer */
   cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+}
+
+footer h5 {
+  color:  var(--boupetique-texto-sobre-fondo) ;
 }
 
 .contact-info-card {
@@ -138,18 +158,24 @@ footer {
   filter: drop-shadow(0 2px 4px rgba(52, 72, 61, 0.12));
 }
 
+/*para los iconos*/
+.fa-solid
+{
+   color: var(--boupetique-olive)!important;
+}
+
 /* Estilo del botón buscar */
 .btn-mi-color {
-  color: #F6F0E3 !important;
-  background-color: #34483D;
-  border-color: #5E7C64;
+  color: var(--boupetique-texto-sobre-fondo);
+  background-color: var(--boupetique-marron);
+  border-color: var(--boupetique-marron);
   cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 .btn-mi-color:hover {
-  background-color: #2F3A3D;
-  border-color: #E7D8C9;
-  color: #ffffff;
+  color: var(--boupetique-texto-sobre-fondo);
+  background-color: var(--boupetique-marron-oscuro);
+  border-color: var(--boupetique-marron-oscuro);
   cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
 }
 
@@ -186,7 +212,7 @@ footer {
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--boupetique-olive);
+  color: var(--boupetique-negro-azabache);
   text-align: center;
   margin: 0 auto;
 }
@@ -211,7 +237,7 @@ footer {
 }
 
 .titulo-valores {
-  background-color: var(--boupetique-gris-ceniza);
+ background-color: var(--boupetique-olive);
   padding: 1.25rem 1.5rem;
   text-align: center;
 }
