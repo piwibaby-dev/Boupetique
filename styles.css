@@ -23,7 +23,19 @@ body {
   line-height: 1.6;
   color: var(--boupetique-negro-azabache);
   background-color: var(--boupetique-cremita);
+  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
 }
+
+navbar {
+  /* Aplica el dibujo a navbar */
+  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+}
+
+a{
+  /* Aplica el dibujo a navbar */
+  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+}
+
 
 /* Regla global para todos los títulos */
 h1,
@@ -60,6 +72,8 @@ h6 {
 /* Estilo del footer */
 footer {
   background-color: var(--boupetique-gris-ceniza);
+  /* Aplica el dibujo a footer */
+  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 .contact-info-card {
@@ -129,12 +143,14 @@ footer {
   color: #F6F0E3 !important;
   background-color: #34483D;
   border-color: #5E7C64;
+  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 .btn-mi-color:hover {
   background-color: #2F3A3D;
   border-color: #E7D8C9;
   color: #ffffff;
+  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 /* SECCION SOBRE NOSOTROS */
