@@ -32,7 +32,7 @@ body {
   line-height: 1.6;
   color: var(--boupetique-negro-azabache);
   background-color: var(--boupetique-cremita);
-  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+  cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 body > * {
@@ -45,12 +45,12 @@ body > * {
 
 navbar {
   /* Aplica el dibujo a navbar */
-  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+  cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 a{
   /* Aplica el dibujo a navbar */
-  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+  cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 
@@ -102,7 +102,7 @@ h6 {
 footer {
   background-color:  var(--boupetique-olive);
   /* Aplica el dibujo a footer */
-  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+  cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 footer h5 {
@@ -182,14 +182,14 @@ footer h5 {
   color: var(--boupetique-texto-sobre-fondo);
   background-color: var(--boupetique-marron);
   border-color: var(--boupetique-marron);
-  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+  cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 .btn-mi-color:hover {
   color: var(--boupetique-texto-sobre-fondo);
   background-color: var(--boupetique-marron-oscuro);
   border-color: var(--boupetique-marron-oscuro);
-  cursor: url('assets/logo-img/pinguino.png') 0 0, auto;
+  cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
 }
 
 /* SECCION SOBRE NOSOTROS */
