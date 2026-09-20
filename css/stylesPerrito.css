@@ -48,7 +48,7 @@ h3,
 ========================================================== */
 
 .hero {
-    background: #f7f4ed;
+    background:  var(--boupetique-cremita);
     overflow: hidden;
 }
 
@@ -374,7 +374,7 @@ h3,
 ========================================================== */
 
 footer {
-    background: #203c2d;
+    background: var(--boupetique-olive);
     color: white;
     padding: 40px 0;
 }

@@ -33,14 +33,17 @@ body {
   color: var(--boupetique-negro-azabache);
   background-color: var(--boupetique-cremita);
   cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
+  
 }
 
 body > * {
   flex-shrink: 0;
 }
+  /* Controla footer */
 
-#site-footer{
-  margin-top: auto;
+#site-footer{ 
+  
+  margin-top: 19%;
 }
 
 navbar {
