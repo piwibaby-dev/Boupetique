@@ -11,24 +11,368 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Conexión de BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Conexión a CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-
+    <link rel="stylesheet" href="../css/styles-productos.css">
 
 </head>
 
 <body data-page="productos">
     <header id="site-header" data-include="../partials/navbar.html"></header>
 
-    <section class="inicio">
-        <h1>Pagina de Productos </h1>
-    </section>
+ <main class="container-fluid px-4 py-4">
+        <div class="mb-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb small text-muted mb-1">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Catálogo</li>
+                </ol>
+            </nav>
+        </div>
 
-    <img src="../assets/piwiscont.png" alt="Work in progress" class="img-fluid mx-auto d-block" style="max-width: 400px;">
-    <h3 class="text-center">Trabajo en progreso, regresa pronto... 🐧</h3>
+        <!-- BANNER -->
+        <div class="catalog-hero-banner mb-4">
+            <div class="banner-overlay">
+                <div class="banner-content">
+                    <span class="badge bg-warning text-dark mb-2 px-3 py-2 text-uppercase fw-bold">Ofertón del Mes</span>
+                    <h1 class="banner-title">Nutrición Premium & Cuidado Natural</h1>
+                    <p class="banner-subtitle">Hasta 20% de descuento en la línea holística seleccionada. Dale a tu mascota la calidad que merece.</p>
+                    <a href="#productos" class="btn btn-banner">Ver ofertas exclusivas</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BARRA DE BENEFICIOS-->
+        <div class="store-features mb-4 p-3 rounded-3 bg-white border">
+            <div class="row text-center g-3">
+                <div class="col-6 col-md-3">
+                    <div class="feature-item">
+                        <i class="bi bi-truck fs-4 text-success"></i>
+                        <div class="mt-1">
+                            <strong class="d-block text-dark small">Envío Gratis</strong>
+                            <span class="text-muted extra-small">En compras mayores a $899</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-item">
+                        <i class="bi bi-shield-check fs-4 text-success"></i>
+                        <div class="mt-1">
+                            <strong class="d-block text-dark small">Pago 100% Seguro</strong>
+                            <span class="text-muted extra-small">Tarjetas, PayPal y OXXO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-item">
+                        <i class="bi bi-award fs-4 text-success"></i>
+                        <div class="mt-1">
+                            <strong class="d-block text-dark small">Calidad Garantizada</strong>
+                            <span class="text-muted extra-small">Ingredientes 100% naturales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-item">
+                        <i class="bi bi-headset fs-4 text-success"></i>
+                        <div class="mt-1">
+                            <strong class="d-block text-dark small">Atención al Cliente</strong>
+                            <span class="text-muted extra-small">Asesoría personalizada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            
+            <!-- BARRA DE FILTROS (IZQUIERDA) -->
+            <aside class="col-12 col-lg-3 col-xl-2 border-end pe-lg-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold m-0 text-dark">Filtrar:</h5>
+                    <button class="btn btn-link p-0 text-decoration-none btn-clear-filters">Eliminar todos</button>
+                </div>
+
+                <!-- Filtros Activos -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <span class="active-filter-tag">
+                        En existencia <i class="fa-solid fa-xmark ms-1"></i>
+                    </span>
+                </div>
+
+                <!-- Sección: Especie -->
+                <div class="filter-section mb-4">
+                    <h6 class="filter-title d-flex justify-content-between align-items-center">
+                        Especie <i class="fa-solid fa-chevron-down small"></i>
+                    </h6>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" id="filterPerro" checked>
+                        <label class="form-check-label d-flex justify-content-between" for="filterPerro">
+                            <span>Perro</span> <span class="text-muted">(7)</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="filterGato">
+                        <label class="form-check-label d-flex justify-content-between" for="filterGato">
+                            <span>Gato</span> <span class="text-muted">(3)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <hr class="my-3">
+
+                <!-- Sección: Categorías -->
+                <div class="filter-section mb-4">
+                    <h6 class="filter-title d-flex justify-content-between align-items-center">
+                        Categorías <i class="fa-solid fa-chevron-down small"></i>
+                    </h6>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" id="catCroquetas">
+                        <label class="form-check-label d-flex justify-content-between" for="catCroquetas">
+                            <span>Alimentos</span> <span class="text-muted">(7)</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="catSnacks">
+                        <label class="form-check-label d-flex justify-content-between" for="catSnacks">
+                            <span>Snacks</span> <span class="text-muted">(4)</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="catCuidados">
+                        <label class="form-check-label d-flex justify-content-between" for="catCuidados">
+                            <span>Salud & Bienestar</span> <span class="text-muted">(3)</span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- PRODUCTOS -->
+            <section class="col-12 col-lg-9 col-xl-10">
+                <div class="row g-4">
+                    
+                    <!-- PRODUCTO 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                        <div class="catalog-card text-center">
+                            <div>
+                                <span class="brand-subtext">Boupetique Selection</span>
+                                
+                                <div class="catalog-img-box" data-bs-toggle="modal" data-bs-target="#modalProducto1">
+                                    <img src="/assets/productos-img/prime-nutrition-20kg.png" 
+                                         class="catalog-img" alt="Alimento">
+                                </div>
+
+                                <p class="catalog-title">Boupetique | Alimento Para Perro Pearl's Prime Nutrition Adult 20 kg</p>
+                            </div>
+
+                            <div>
+                                <div class="price-box">
+                                    <span class="price-current">$1,160</span>
+                                    <span class="price-original">$1,000</span>
+                                </div>
+
+                                <button class="btn-catalog-select" data-bs-toggle="modal" data-bs-target="#modalProducto1">
+                                    Seleccionar opciones
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                        <div class="catalog-card text-center">
+                            <div>
+                                <span class="brand-subtext">Boupetique Selection</span>
+                                
+                                <div class="catalog-img-box" data-bs-toggle="modal" data-bs-target="#modalProducto2">
+                                    <img src="" class="catalog-img" alt="">
+                                </div>
+
+                                <p class="catalog-title">Boupetique | Snacks Premios Hígado Deshidratado</p>
+                            </div>
+
+                            <div>
+                                <div class="price-box">
+                                    <span class="price-current">$185</span>
+                                </div>
+
+                                <button class="btn-catalog-select">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 3 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                        <div class="catalog-card text-center">
+                            <div>
+                                <span class="brand-subtext">Boupetique Selection</span>
+                                
+                                <div class="catalog-img-box" data-bs-toggle="modal" data-bs-target="#modalProducto3">
+                                    <img src="" class="catalog-img" alt="">
+                                </div>
+
+                                <p class="catalog-title">Boupetique | Aceite Ómega 3 de Salmón Silvestre</p>
+                            </div>
+
+                            <div>
+                                <div class="price-box">
+                                    <span class="price-current">$564</span>
+                                    <span class="price-original">$675</span>
+                                </div>
+
+                                <button class="btn-catalog-select" data-bs-toggle="modal" data-bs-target="#modalProducto3">
+                                    Seleccionar opciones
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 4 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                        <div class="catalog-card text-center">
+                            <div>
+                                <span class="brand-subtext">Boupetique Selection</span>
+                                
+                                <div class="catalog-img-box">
+                                    <img src="" class="catalog-img" alt="">
+                                </div>
+
+                                <p class="catalog-title">Boupetique | Champú Orgánico Avena y Manzanilla</p>
+                            </div>
+
+                            <div>
+                                <div class="price-box">
+                                    <span class="price-current">$240</span>
+                                </div>
+
+                                <button class="btn-catalog-select">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRODUCTO 5 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                        <div class="catalog-card text-center">
+                            <div>
+                                <span class="brand-subtext">Boupetique Cats</span>
+                                <div class="catalog-img-box">
+                                    <img src="" class="catalog-img" alt="">
+                                </div>
+                                <p class="catalog-title">Boupetique | Catnip Orgánico en Spray para Gatos</p>
+                            </div>
+                            <div>
+                                <div class="price-box">
+                                    <span class="price-current">$160</span>
+                                </div>
+                                <button class="btn-catalog-select">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRODUCTO 6 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                        <div class="catalog-card text-center">
+                            <div>
+                                <span class="brand-subtext">Boupetique Selection</span>
+                                <div class="catalog-img-box">
+                                    <img src="" class="catalog-img" alt="">
+                                </div>
+                                <p class="catalog-title">Boupetique | Galletas Artesanales Camote y Mantequilla de Maní</p>
+                            </div>
+                            <div>
+                                <div class="price-box">
+                                    <span class="price-current">$145</span>
+                                    <span class="price-original">$175</span>
+                                </div>
+                                <button class="btn-catalog-select">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 7-->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                        <div class="catalog-card text-center">
+                            <div>
+                                <span class="brand-subtext">Boupetique Home</span>
+                                <div class="catalog-img-box">
+                                    <img src="" class="catalog-img" alt="">
+                                </div>
+                                <p class="catalog-title">Boupetique | Comedero Elevado de Cerámica y Base de Madera</p>
+                            </div>
+                            <div>
+                                <div class="price-box">
+                                    <span class="price-current">$510</span>
+                                </div>
+                                <button class="btn-catalog-select">
+                                    Seleccionar opciones
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 8-->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                        <div class="catalog-card text-center">
+                            <div>
+                                <span class="brand-subtext">Boupetique Care</span>
+                                <div class="catalog-img-box">
+                                    <img src="" class="catalog-img" alt="">
+                                </div>
+                                <p class="catalog-title">Boupetique | Cepillo Deslanador de Bambú Ecológico</p>
+                            </div>
+                            <div>
+                                <div class="price-box">
+                                    <span class="price-current">$280</span>
+                                    <span class="price-original">$320</span>
+                                </div>
+                                <button class="btn-catalog-select">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+        <!-- Modal Limpio -->
+    <div class="modal fade" id="modalProducto1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-5 p-4 bg-white shadow-lg">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-12 col-md-6 text-center">
+                            <img src="/assets/productos-img/prime-nutrition-20kg.png"class="img-fluid drop-shadow-modal" alt="Producto 1">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <span class="micro-category">Alimentación Canina</span>
+                            <h2 class="fw-bold text-dark mt-1 mb-2"> Alimento Para Perro Pearl's Prime Nutrition Adult 20 kg</h2>
+                            <p class="text-muted small">Alimento completo Super Premium a base de proteína de pollo de alta calidad. Formulado con vitaminas A, B6, C y E, fortalece el sistema inmunológico, cuida la salud cardiovascular y promueve el desarrollo muscular fuerte y definido de tu perro en su etapa adulta.</p>
+                            
+                            <div class="my-3">
+                                <span class="fs-3 fw-bold text-dark">$1160.00</span>
+                                <span class="text-muted text-decoration-line-through ms-2">$1000.00</span>
+                            </div>
+
+                            <button class="btn btn-dark w-100 rounded-pill py-3 fw-semibold">
+                                Añadir a la bolsa
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer id="site-footer" class="text-light py-5" data-include="../partials/footer.html"></footer>
 
