@@ -35,7 +35,21 @@ function setActiveNavLink() {
 	}
 }
 
+function setGitHubPagesBasePath() {
+	const currentPath = window.location.pathname;
+	const htmlDirectory = currentPath.indexOf("/html/");
+	const siteRoot = htmlDirectory >= 0
+		? currentPath.slice(0, htmlDirectory + 1)
+		: currentPath.slice(0, currentPath.lastIndexOf("/") + 1);
+
+	document.querySelectorAll('a[href^="/"]').forEach((link) => {
+		const path = link.getAttribute("href");
+		link.setAttribute("href", `${siteRoot}${path.slice(1)}`);
+	});
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
 	await includePartials();
+	setGitHubPagesBasePath();
 	setActiveNavLink();
 });
