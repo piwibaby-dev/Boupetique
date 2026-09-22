@@ -1,0 +1,166 @@
+/* Estilos para mostrar los productos */
+/* Asegura que las tarjetas en la misma fila tengan exactamente la misma altura */
+.catalog-card {
+  background: #ffffff;
+  border: 1px solid #eaeeed;
+  border-radius: 12px;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+}
+
+.catalog-card:hover {
+  border-color: #d1d8d6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Marco para fijar el tamaño de la imagen */
+.catalog-img-box {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* Fuerza a que las fotos llenen o se escalen dentro del contenedor sin desencajar */
+.catalog-img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.catalog-card:hover .catalog-img {
+  transform: scale(1.05);
+}
+
+/* Texto de la marca arriba del producto */
+.brand-subtext {
+  font-size: 0.7rem;
+  color: #8c857b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/*Titulo */
+.catalog-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2b2b2b;
+  line-height: 1.35;
+  min-height: 2.7em;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+/* Boton*/
+.btn-catalog-select {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #2d4a3e; /* Tono verde alineado con el navbar */
+  color: #2d4a3e;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-catalog-select:hover {
+  background-color: #2d4a3e;
+  color: #ffffff;
+}
+
+
+/* ====================================================
+   BANNER PUBLICITARIO Y BARRAS DE BENEFICIOS
+   ==================================================== */
+
+/* Banner Hero */
+.catalog-hero-banner {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background-image: url('/assets/productos-img/banner-perritos.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 240px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.banner-overlay {
+    background: linear-gradient(90deg, rgba(34, 56, 46, 0.88) 0%, rgba(34, 56, 46, 0.4) 100%);
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.banner-content {
+    max-width: 520px;
+    color: #ffffff;
+}
+
+.banner-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.banner-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.92;
+    margin-bottom: 16px;
+}
+
+.btn-banner {
+    background-color: #ffffff;
+    color: #22382e;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.25s ease;
+}
+
+.btn-banner:hover {
+    background-color: #f1f3f2;
+    color: #1a2a23;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Barra de Beneficios */
+.store-features {
+    background-color: #ffffff;
+    border: 1px solid #eaeeed !important;
+}
+
+.feature-item i {
+    color: #22382e !important; 
+}
+
+.extra-small {
+    font-size: 0.72rem;
+    display: block;
+    line-height: 1.2;
+}
