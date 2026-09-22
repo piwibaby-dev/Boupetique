@@ -95,7 +95,7 @@
     position: relative;
     border-radius: 14px;
     overflow: hidden;
-    background-image: url('/assets/productos-img/banner-perritos.png');
+    background-image: url('../assets/productos-img/banner-perritos.png');
     background-size: cover;
     background-position: center;
     min-height: 240px;
