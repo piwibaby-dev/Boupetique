@@ -42,9 +42,10 @@ function setGitHubPagesBasePath() {
 		? currentPath.slice(0, htmlDirectory + 1)
 		: currentPath.slice(0, currentPath.lastIndexOf("/") + 1);
 
-	document.querySelectorAll('a[href^="/"]').forEach((link) => {
-		const path = link.getAttribute("href");
-		link.setAttribute("href", `${siteRoot}${path.slice(1)}`);
+	document.querySelectorAll('[href^="/"], [src^="/"]').forEach((element) => {
+		const attribute = element.hasAttribute("href") ? "href" : "src";
+		const path = element.getAttribute(attribute);
+		element.setAttribute(attribute, `${siteRoot}${path.slice(1)}`);
 	});
 }
 
