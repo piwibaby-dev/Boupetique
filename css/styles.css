@@ -538,3 +538,11 @@ footer h5 {
   background-color: var(--boupetique-cremita) !important;
   color: var(--boupetique-gris-ceniza) !important;
 }
+
+/*formulario de prductos*/
+.form-products{
+ background-color: var(--boupetique-olive);
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  color: #FFFFFF;
+}
