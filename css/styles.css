@@ -46,9 +46,12 @@ body > * {
   margin-top: 19%;
 }
 
-navbar {
+#site-header {
   /* Aplica el dibujo a navbar */
   cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
+  position: sticky;
+  top: 0;
+  z-index: 600;
 }
 
 a{
