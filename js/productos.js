@@ -32,3 +32,4 @@ const renderizarProductos = ({Nombre,Imagen_URL,Precio_Base,Peso_Valor,Peso_Unid
     mainEl.insertAdjacentHTML("afterend", productCard);
 }
 products.map((product) => renderizarProductos(product))
+console.log(products);
