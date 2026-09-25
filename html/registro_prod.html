@@ -136,8 +136,8 @@
                                     <div class="col-md-6 mb-3">
                                         <label for="Requiere_Receta" class="form-label">¿Requiere Receta?</label>
                                         <select class="form-select" id="Requiere_Receta">
-                                            <option value="0">No (0)</option>
-                                            <option value="1">Sí (1)</option>
+                                            <option value="0">No</option>
+                                            <option value="1">Sí</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6 mb-3">
@@ -155,8 +155,11 @@
                                 <div class="d-grid gap-2">
                                     <button type="submit" class="btn btn-success form-products" id="btnSubmit">Crear
                                         Producto</button>
-                                    <button type="button" class="btn btn-secondary d-none form-products" id="btnCancel"
+                                    <!--?resetForm() es un manejador de eventos que ejecuta una función de JavaScript cuando el usuario hace clic en ese botón. lo usamos en crud.js para limpiar registros en cancelacion de edicion de productos -->
+                                    <!--! aun sin usar este boton-->
+                                   <button type="button" class="btn btn-secondary d-none form-products" id="btnCancel"
                                         onclick="resetForm()">Cancelar Edición</button>
+                                    
                                 </div>
                             </form>
                         </div>
