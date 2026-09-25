@@ -21,17 +21,30 @@
 
 </head>
 
-<body data-page="registro">
+<body data-page="registro-productos">
     <header id="site-header" data-include="../partials/navbar.html"></header>
 
     <section class="inicio">
-        <h1>Pagina de Registro</h1>
-
-        <div class="container-fluid py-4  ">
+        <h1>Registro de productos</h1>
+    <!--! botones para ir a pagina de registro de productos: TEMPORALES mientras se decide como y donde indexar -->
+    <div class="container-fluid px-4 py-4">
+        <div class="mb-3">
+            <div class="d-flex gap-2">
+                <button type="button" class="btn form-products"> <!--? form products es propuedad css para color verde-->
+                    <a href="./registro_prod.html" class="text-decoration-none text-white">Registro de productos</a>
+                </button>
+                <button type="button" class="btn form-products"><!--? form products es propuedad css para color verde-->
+                    <a href="./productos.html" class="text-decoration-none text-white">Página de productos</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--! FIN DE BOTONES: registro productos y productos-->
+        <div class="container-fluid py-4">
             <h1 class="text-center mb-4 fw-bold text-black">Panel de Administración de Productos</h1>
 
             <div class="row">
-                <!--! COLUMNA IZQUIERDA: FORMULARIO (ALTAS: Espero lograr CAMBIÓS Y BAJAS) -->
+                <!--! COLUMNA IZQUIERDA: FORMULARIO -->
                 <div class="col-lg-5 mb-4">
                     <div class="card shadow-sm border-0">
                         <div class="card-header form-products">
@@ -148,29 +161,31 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> <!-- Fin col-lg-5 -->
 
                 <!--! COLUMNA DERECHA: VISTA DE PRODUCTOS DADOS DE ALTA -->
-
-
                 <div class="col-lg-7">
-                    <div class="card shadow-sm border-0">
+                    <div class="card shadow-sm border-0 mb-4">
                         <div class="card-header form-products">
-                            <h5 class="mb-0 text-white" >Productos Ingresados (Vista Previa)</h5>
+                            <h5 class="mb-0 text-white">Productos Ingresados (Vista Previa)</h5>
                         </div>
                         <div class="card-body" style="max-height: 500px; overflow-y: auto;">
                             <div id="productosContainer" class="row">
                                 <!-- Aquí se inyectarán las tarjetas dinámicamente -->
                             </div>
                         </div>
-                    </div>                
-                    <div class="col-lg-7">
-                    <img src="../assets/piwiscont.png" alt="Work in progress" class="img-fluid mx-auto d-block"
-                        style="max-width: 400px;">
-                    <h3 class="text-center">Trabajo en progreso, regresa pronto... 🐧</h3>
-                </div>
+                    </div>
 
-    </section>
+                    <!-- Sección Work in Progress -->
+                    <div class="text-center mt-3">
+                        <img src="../assets/piwiscont.png" alt="Work in progress" class="img-fluid mx-auto d-block"
+                            style="max-width: 400px;">
+                        <h3 class="text-center mt-2">Trabajo en progreso, regresa pronto... 🐧</h3>
+                    </div>
+                </div> <!-- Fin col-lg-7 -->
+            </div> <!-- Fin row -->
+        </div> <!-- Fin container-fluid -->
+    </section> <!-- Fin section -->
 
     <footer id="site-footer" class="text-light py-5" data-include="../partials/footer.html"></footer>
 
