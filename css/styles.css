@@ -46,9 +46,12 @@ body > * {
   margin-top: 19%;
 }
 
-navbar {
+#site-header {
   /* Aplica el dibujo a navbar */
   cursor: url('../assets/logo-img/pinguino.png') 0 0, auto;
+  position: sticky;
+  top: 0;
+  z-index: 600;
 }
 
 a{
@@ -776,4 +779,11 @@ footer h5 {
   .mobile-brand-logo {
     transition-duration: 0.90ms;
   }
+}
+/*formulario de prductos*/
+.form-products{
+ background-color: var(--boupetique-olive);
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  color: #FFFFFF;
 }
