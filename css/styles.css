@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-cuerpo);
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--boupetique-negro-azabache);
   background-color: var(--boupetique-cremita);
