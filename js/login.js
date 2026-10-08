@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
             showAlert("Por favor, ingresa un correo electrónico válido.", "warning");
             return;
         }
-        if (password.length < 6) {
-            showAlert("La contraseña debe tener al menos 6 caracteres.", "warning");
+        if (password.length < 8) {
+            showAlert("La contraseña debe tener al menos 8 caracteres.", "warning");
             return;
         }
 
