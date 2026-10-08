@@ -45,10 +45,19 @@ document.addEventListener("DOMContentLoaded", () => {
             password: password
         };
 
+        // Este bloque oculta la contraseña en el objeto sessionData antes de guardarlo en el LocalStorage.
+        /*
+        const sessionData = {
+            email: email,
+            loginTime: new Date().toISOString(),
+            isLoggedIn: true
+        };
+        */
+
         // guardar en el LocalStorage convertida a texto JSON
         localStorage.setItem("userSession", JSON.stringify(sessionData));
 
-        showAlert("¡Welcome to the jungle mutherfucker!", "success");
+        showAlert("¡Bienvenido a Boupetique!", "success");
 
         setTimeout(() => {
             window.location.href = "../index.html";
