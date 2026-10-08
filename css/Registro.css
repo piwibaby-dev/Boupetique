@@ -53,7 +53,7 @@ font-size: 1.5rem;
   
 }
 
-/* Cambiar el color del texto small (contador) */
+/* Color de letra*/
 
  #formulario .form-label {
 
@@ -62,22 +62,12 @@ font-size: 1.5rem;
 
 }
 
-
-
-
-
-.btn-primary {
-  background-color: var(--boupetique-chocolat);
-  border-color: var(--boupetique-chocolat);
-  border-radius: 30px;
-  padding: 12px;
-  font-weight: 600;
+#formulario .form-control, 
+#formulario .form-select {
+    background-color: var(--boupetique-cremita) !important; /* usar tono de boupetique */
+    
 }
 
-.btn-primary:hover {
-  background-color: var(--boupetique-gris-ceniza);
-  border-color: var(--boupetique-gris);
-}
 
 .form-control::placeholder {
   color: var(--boupetique-gris-ceniza);
