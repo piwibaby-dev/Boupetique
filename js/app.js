@@ -211,3 +211,102 @@ function initializePasswordToggle() {
         eyeIcon.innerHTML = isPassword ? eyeClosed : eyeOpen;
     });
 }
+
+const reviewsRow1 = [
+  {
+    quote: "La cama ortopédica para perro superó todas mis expectativas. Max solía levantarse con rigidez en las caderas y desde la primera semana se nota su descanso profundo.",
+    name: "David Wright",
+    role: "Dueño de Golden Retriever",
+    avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120"
+  },
+  {
+    quote: "Los snacks 100% naturales son de una calidad brutal. Mi perrita suele ser sumamente alérgica a ciertos conservadores, pero estos los digiere a la perfección.",
+    name: "Manu Arora",
+    role: "Humano de Luna (Bulldog Francés)",
+    avatarUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120&h=120"
+  },
+  {
+    quote: "El arnés ergonómico y la correa reflectante llegaron al día siguiente de pedir en Boupetique. Los acabados y la resistencia son de diez.",
+    name: "Jack Brown",
+    role: "Dueño de Pastor Alemán",
+    avatarUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=120&h=120"
+  },
+  {
+    quote: "Buscaba juguetes cognitivos resistentes para evitar la ansiedad por separación en casa. Boupetique tiene la mejor selección técnica del mercado.",
+    name: "Eva Green",
+    role: "Entrenadora canina & Pet Lover",
+    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=120&h=120"
+  }
+];
+
+const reviewsRow2 = [
+  {
+    quote: "El árbol rascador modular no solo es el favorito de mis gatos, sino que estéticamente parece una pieza de diseño en la sala. Resistente y fácil de limpiar.",
+    name: "Ivy Wilson",
+    role: "Tutora de Mishi & Oliver",
+    avatarUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=120&h=120"
+  },
+  {
+    quote: "No vuelvo a comprar comida o premios en ningún otro sitio. El empaque sustentable y la frescura de los ingredientes marcan una diferencia enorme.",
+    name: "Carlos Méndez",
+    role: "Papá de gato Siamés",
+    avatarUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=120&h=120"
+  },
+  {
+    quote: "La fuente de agua en acero inoxidable con filtro silencioso logró que mis gatos finalmente bebieran suficiente agua al día. Su salud renal mejoró muchísimo.",
+    name: "Cathy Lee",
+    role: "Mamá de 3 felinos rescatados",
+    avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120&h=120"
+  },
+  {
+    quote: "Atención al cliente impecable en Boupetique. Me orientaron sobre las tallas exactas de collar y ropa térmica para mi Pug antes de comprar.",
+    name: "Sofía Valenzuela",
+    role: "Dueña de Milo",
+    avatarUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=120&h=120"
+  }
+];
+
+
+function createReviewCard(review) {
+  return `
+    <div class="review-card">
+      <p class="quote-text">"${review.quote}"</p>
+      <div class="card-author">
+        <img class="avatar-image" src="${review.avatarUrl}" alt="${review.name}" loading="lazy">
+        <div class="author-info">
+          <span class="author-name">${review.name}</span>
+          <span class="author-meta">${review.role}</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function setupTrack(trackElement, data, direction, speed) {
+  const cardsHtml = data.map(createReviewCard).join('');
+  trackElement.innerHTML = cardsHtml + cardsHtml;
+
+  trackElement.style.setProperty('--scroll-duration', `${speed}s`);
+
+  if (direction === 'right') {
+    trackElement.classList.add('animate-right');
+  } else {
+    trackElement.classList.add('animate-left');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track1 = document.getElementById('track1');
+  const track2 = document.getElementById('track2');
+
+  if (track1 && track2) {
+    const speedTrack1 = track1.parentElement.dataset.speed || 35;
+    const dirTrack1 = track1.parentElement.dataset.direction || 'left';
+
+    const speedTrack2 = track2.parentElement.dataset.speed || 40;
+    const dirTrack2 = track2.parentElement.dataset.direction || 'right';
+
+    setupTrack(track1, reviewsRow1, dirTrack1, speedTrack1);
+    setupTrack(track2, reviewsRow2, dirTrack2, speedTrack2);
+  }
+});
