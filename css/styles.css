@@ -1198,9 +1198,9 @@ body[data-page="login"] {
 
 /* Entradas a formulario */
 .custom-input {
-  background-color: var(--boupetique-cremita) !important; 
+  background-color: var(--boupetique-olive-clear) !important;
   border: 1px solid transparent;
-  color: #060606;
+  color: #faf6f6;
   border-radius: 0.75rem;
   padding: 0.75rem 1.25rem;
   font-size: 0.875rem;
@@ -1214,7 +1214,7 @@ body[data-page="login"] {
 
 .custom-input:focus {
   background-color: rgb(34, 60, 11);
-  color: #090909;
+  color: #ffffff;
   border-color: rgba(255, 255, 255, 0.3);
   box-shadow: none;
 }
