@@ -9,9 +9,8 @@ Creación del formulario de inicio de sesión para que los usuarios puedan ingre
 ### 🗄️ Tarea 11: Estructura de la Base de Datos en MySQL
 Diseño de la base de datos en MySQL para guardar la información de la e-commerce.
 * **`MySQL/`**: Carpeta donde se guardan los archivos de la base de datos:
-  * **Diagrama de la base de datos**: Dibujo técnico creado en MySQL Workbench que muestra cómo se conectan las tablas.
-  * **Script de creación**: Archivo para crear automáticamente la base de datos y todas sus tablas.
-  * **Script de datos de prueba**: Archivo para llenar las tablas con 5 registros de ejemplo en cada una.
+  * **Evidencia_Piwibabys_Base_Datos_Boupetique.pdf**: Evidencia de diagrama E-R, creación de tablas e inserts creados en MySQL Workbench.
+  * **Boupetique.sql**: Script SQL que contiene la creación de la base de datos y los bloques de inserción (INSERT INTO) con registros de prueba por cada tabla.
 
 # 📅  Tareas 8 y 9 (Sprint 5)
 
