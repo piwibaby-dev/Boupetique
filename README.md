@@ -1,4 +1,18 @@
 
+# 📅 Tareas 10 y 11 (Sprint 6)
+
+### 📦 Tarea 10: Inicio de Sesión de Usuarios con LocalStorage
+Creación del formulario de inicio de sesión para que los usuarios puedan ingresar a la página validando sus datos guardados en el navegador.
+* **`pages/login.html`**: Pantalla de inicio de sesión con diseño adaptable para celulares y computadoras.
+* **`js/login.js`**: Código para revisar que los campos no estén vacíos, verificar que el correo y la contraseña sean correctos y mostrar los mensajes de alerta o éxito.
+- 
+### 🗄️ Tarea 11: Estructura de la Base de Datos en MySQL
+Diseño de la base de datos en MySQL para guardar la información de la e-commerce.
+* **`MySql/`**: Carpeta donde se guardan los archivos de la base de datos:
+  * **Diagrama de la base de datos**: Dibujo técnico creado en MySQL Workbench que muestra cómo se conectan las tablas.
+  * **Script de creación**: Archivo para crear automáticamente la base de datos y todas sus tablas.
+  * **Script de datos de prueba**: Archivo para llenar las tablas con 5 registros de ejemplo en cada una.
+
 # 📅  Tareas 8 y 9 (Sprint 5)
 
 ### 📦 Tarea 8: Formulario de Creación de objeto del modelo (Publicación o Producto)
